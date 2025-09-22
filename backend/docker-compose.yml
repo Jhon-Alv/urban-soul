@@ -1,0 +1,20 @@
+services:
+
+  urbansoul-mysql-container:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: urbansoul
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-padmin" ]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+    ports:
+      - "3306:3306"
+    volumes:
+      - urbansoul_data:/var/lib/mysql
+    restart: unless-stopped
+
+volumes:
+  urbansoul_data:
