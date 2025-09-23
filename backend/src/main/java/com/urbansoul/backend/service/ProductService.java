@@ -23,7 +23,17 @@ public class ProductService {
             Product found = product.get();
             return ProductMapper.toDto(found);
         }else {
-            throw new EntityNotFoundException("Product with ID "+ id + "not found");
+            throw new EntityNotFoundException("Product with ID"+ id + "not found");
+        }
+
+    }
+    public ProductDto getProductByName(String name){
+        Optional<Product> product = productRepository.findByName(name);
+        if (product.isPresent()){
+            Product found = product.get();
+            return ProductMapper.toDto(found);
+        }else {
+            throw new EntityNotFoundException("Product "+ name + "not found");
         }
 
     }

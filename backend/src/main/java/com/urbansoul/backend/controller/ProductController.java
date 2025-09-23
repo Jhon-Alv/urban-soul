@@ -18,8 +18,14 @@ public class ProductController {
     public ProductService productService;
 
     @GetMapping("/{id}")
-    public ResponseEntity<ProductDto> getProduct(@PathVariable Long id){
+    public ResponseEntity<ProductDto> getProductById(@PathVariable Long id){
         ProductDto dto = productService.getProductById(id);
+        return ResponseEntity.ok(dto);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<ProductDto> getProductByName(@RequestParam("name") String name){
+        ProductDto dto = productService.getProductByName(name);
         return ResponseEntity.ok(dto);
     }
 
