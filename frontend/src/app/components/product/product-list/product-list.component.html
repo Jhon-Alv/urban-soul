@@ -1,0 +1,7 @@
+<div
+    class="flex flex-wrap items-center justify-center mt-10 pt-10 border-t-[1.5px] border-wild-sand-900 min-w-[180vh] gap-10"
+>
+    @for (product of productList; track product.name) {
+        <app-product-card [product]="product" />
+    }
+</div>

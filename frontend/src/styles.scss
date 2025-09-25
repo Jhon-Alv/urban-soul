@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "UrbanSoul";
+    src: url("/assets/font/Montserrat.ttf") format("true-type");
+}
+
+@theme {
+    --color-wild-sand-50: #f6f4f3;
+    --color-wild-sand-100: #ede9e7;
+    --color-wild-sand-200: #dad1ce;
+    --color-wild-sand-300: #c2b5af;
+    --color-wild-sand-400: #a9948e;
+    --color-wild-sand-500: #987e77;
+    --color-wild-sand-600: #8b6f6b;
+    --color-wild-sand-700: #745c5a;
+    --color-wild-sand-800: #604d4c;
+    --color-wild-sand-900: #4f3f3f;
+    --color-wild-sand-950: #292121;
+}
