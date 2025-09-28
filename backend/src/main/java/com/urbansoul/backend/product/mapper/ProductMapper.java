@@ -1,7 +1,7 @@
-package com.urbansoul.backend.mapper;
+package com.urbansoul.backend.product.mapper;
 
-import com.urbansoul.backend.dto.ProductDto;
-import com.urbansoul.backend.model.Product;
+import com.urbansoul.backend.product.dto.ProductDto;
+import com.urbansoul.backend.product.model.Product;
 
 public class ProductMapper {
 

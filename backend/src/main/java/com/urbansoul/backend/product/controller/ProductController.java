@@ -1,7 +1,7 @@
-package com.urbansoul.backend.controller;
+package com.urbansoul.backend.product.controller;
 
-import com.urbansoul.backend.dto.ProductDto;
-import com.urbansoul.backend.service.ProductService;
+import com.urbansoul.backend.product.dto.ProductDto;
+import com.urbansoul.backend.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

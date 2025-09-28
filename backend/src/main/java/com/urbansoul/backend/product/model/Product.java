@@ -1,13 +1,11 @@
-package com.urbansoul.backend.model;
+package com.urbansoul.backend.product.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
+@Table(name = "products")
 public class Product {
 
     @Id

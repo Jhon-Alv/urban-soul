@@ -1,9 +1,9 @@
-package com.urbansoul.backend.service;
+package com.urbansoul.backend.product.service;
 
-import com.urbansoul.backend.dto.ProductDto;
-import com.urbansoul.backend.mapper.ProductMapper;
-import com.urbansoul.backend.model.Product;
-import com.urbansoul.backend.repository.ProductRepository;
+import com.urbansoul.backend.product.dto.ProductDto;
+import com.urbansoul.backend.product.mapper.ProductMapper;
+import com.urbansoul.backend.product.model.Product;
+import com.urbansoul.backend.product.repository.ProductRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

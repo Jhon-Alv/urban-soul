@@ -1,4 +1,4 @@
-package com.urbansoul.backend.dto;
+package com.urbansoul.backend.product.dto;
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;

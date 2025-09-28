@@ -1,6 +1,6 @@
-package com.urbansoul.backend.repository;
+package com.urbansoul.backend.product.repository;
 
-import com.urbansoul.backend.model.Product;
+import com.urbansoul.backend.product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
