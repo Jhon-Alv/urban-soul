@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProductDto {
 
+    private Long id;
     @NotBlank(message = "The name is obligatory")
     private String name;
     @NotBlank(message = "The description is obligatory")

@@ -9,6 +9,7 @@ public class ProductMapper {
         if (product == null) return null;
 
         ProductDto dto = new ProductDto();
+        dto.setId(product.getId());
         dto.setName(product.getName());
         dto.setDescription(product.getDescription());
         dto.setSize(product.getSize());
@@ -26,6 +27,7 @@ public class ProductMapper {
         if (dto == null) return null;
 
         Product product = new Product();
+        product.setId(dto.getId());
         product.setName(dto.getName());
         product.setDescription(dto.getDescription());
         product.setSize(dto.getSize());

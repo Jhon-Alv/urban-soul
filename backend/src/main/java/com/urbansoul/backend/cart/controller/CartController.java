@@ -39,4 +39,16 @@ public class CartController {
         return ResponseEntity.ok(dto);
     }
 
+    @PutMapping("/{userId}/")
+
+    @GetMapping
+    public List<Cart> getCarts(){
+        return cartRepository.findAll();
+    }
+
+    @DeleteMapping
+    public void deleteCarts(){
+        cartRepository.deleteAll();
+    }
+
 }
